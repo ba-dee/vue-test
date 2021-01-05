@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checked选择器</title>
+
+    <style>
+
+        input[type="checkbox"]:checked{
+            width: 20px;
+            height: 20px;
+        }
+        input[type="checkbox"]:checked +label{
+            text-decoration: line-through;
+        }
+    </style>
+
+
+</head>
+<body>
+<input type="checkbox" name="todo[]" id="todo1" checked><label for="todo1">aaaaa</label><br>
+<input type="checkbox" name="todo[]" id="todo2"><label for="todo2">bbbbb</label><br>
+<input type="checkbox" name="todo[]" id="todo3"><label for="todo3">ccccc</label><br>
+
+
+</body>
+</html>

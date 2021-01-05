@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>valid-invalid选择器</title>
+    <style>
+        .container{
+            margin: 100px;
+        }
+        input:valid{
+            background-color: lightgreen;
+        }
+        input:invalid{
+            background-color: rebeccapurple;
+        }
+    </style>
+
+
+</head>
+<body>
+<form action="#">
+    <div class="container">
+    <input type="number" name="number" id="1" min="1" max="10" value="5"><br>
+    <input type="email" name="email" id="2" required><br>
+    <input type="url" name="rul" id="3" required>
+    </div>
+</form>
+</body>
+</html>

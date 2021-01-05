@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in-range和out-of-range选择器</title>
+    <style>
+
+        input[type="number"]:in-range{
+            background-color: lightgreen;
+        }
+        input[type="number"]:out-of-range{
+            background-color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+<form action="#">
+    <input type="number" name="age" id="" min="1" max="150" required>
+</form>
+</body>
+</html>

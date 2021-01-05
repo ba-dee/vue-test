@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>empty选择器</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 200px;
+            border: 1px solid #42b983;
+        }
+        div:empty{
+            background-color: lightgreen;
+        }
+        td:empty{
+            background-color: grey;
+        }
+        p:empty{
+            background-color: goldenrod;
+        }
+        p::before{
+            content: "this is apple";
+        }
+    </style>
+
+
+</head>
+<body>
+:empty 页面中元素内容为空添加样式
+<div>hi apple</div>
+<div> </div>
+<div></div>
+<hr>
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>年龄</td>tr
+    <tr/>
+    <tr>
+        <td>aaa</td>
+        <td>男</td>
+        <td>20</td>
+    <tr/>
+    <tr>
+        <td>bbb</td>
+        <td>女</td>
+        <td></td>
+    <tr/>
+</table>
+<p></p>
+
+</body>
+</html>

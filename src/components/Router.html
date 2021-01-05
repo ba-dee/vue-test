@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>
+        <router-link to="/news">新闻</router-link>
+        <router-link to="/books">图书</router-link>
+        <router-link to="/videos">视频</router-link>
+    </p>
+    <router-view></router-view>
+</div>
+</body>
+<script>
+    const com1 = {template: '<div>新闻...</div>'}
+    const com2 = {template: '<div>图书...</div>'}
+    const com3 = {template: '<div>视频...</div>'}
+
+
+
+    //创建路由实例
+    const router = new VueRouter({
+        routes:[
+            {path: '/news', component: com1},
+            {path: '/books', component: com2},
+            {path: '/videos', component: com3}
+        ],
+    })
+    const app = new Vue({
+        router:router
+    }).$mount('#app');//el是自动挂载，mount是手动挂载（延时）
+</script>
+</html>
+

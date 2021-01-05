@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>启用禁用伪类选择器</title>
+
+    <style>
+        input[type="checkbox"]:enabled+label{
+            color:#096
+        }
+        input[type="checkbox"]:disabled+label{
+            text-decoration: line-through;
+            cursor: not-allowed;
+        }
+    </style>
+
+
+</head>
+<body>
+<form action="#">
+    <input type="checkbox" name="test[]" id="checkbox-1" disabled>
+    <label for="checkbox-1"> first choice(disabled)</label>
+    <input type="checkbox" name="test[]" id="checkbox-2" >
+    <label for="checkbox-2"> secondChoice</label>
+
+</form>
+</body>
+</html>

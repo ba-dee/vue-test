@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>root 选择器</title>
+
+    <style>
+        :root{
+            /*height: 1920px;*/
+            /*width: 1080px;*/
+
+            background-color: #CCCCCC;
+        }
+
+        :root:after{
+            content: "hello koing ";
+            color: #ffff;
+            display: block;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -50px;
+            background-color: purple;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+:root 将样式绑定到根元素，也就是html元素
+
+</body>
+</html>
